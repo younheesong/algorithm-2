@@ -13,8 +13,23 @@
             if (arr[i] < arr[j]) answer[i]++;
           }
         }
+
         return answer;
       }
+
+      // function solution(arr) {
+      //   const answer = [];
+      //   // 원본 배열 복사
+      //   const copy = arr.slice();
+      //   // arr 을 정렬한다.
+      //   arr.sort((a, b) => b - a);
+
+      //   // 배열을 순회하면서 정렬된 배열중에서 원본 배열이 나온 가장 첫번째 인덱스를 가져온다. (인덱스는 0부터 시작하므로 +1을 해준다)
+      //   for (let i = 0; i < arr.length; i++) {
+      //     answer.push(arr.indexOf(copy[i]) + 1);
+      //   }
+      //   return answer;
+      // }
 
       let arr = [87, 89, 92, 100, 76];
       console.log(solution(arr));
